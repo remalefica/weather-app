@@ -1,0 +1,11 @@
+@import "../../../scss/mixins.scss";
+@import "../../../scss/variables.scss";
+
+.weather {
+  border-radius: $border-radius * 2;
+  padding: 32px;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  color: $color-white;
+  background: $gradient-day;
+}

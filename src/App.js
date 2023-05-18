@@ -1,10 +1,21 @@
-import './App.css';
+import './App.scss';
+import Footer from './components/organisms/Footer';
+import Header from './components/organisms/Header';
+import WeatherCard from './components/organisms/WeatherCard';
+
+import WeatherContextProvider from "./contexts/WeatherContext";
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <WeatherContextProvider>
+      <div className="App">
+        <Header />
+        <main>
+          <WeatherCard />
+        </main>
+        <Footer />
+      </div>
+    </WeatherContextProvider>
   );
 }
 

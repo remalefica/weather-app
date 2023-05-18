@@ -1,0 +1,33 @@
+@import "../../../scss/mixins.scss";
+@import "../../../scss/variables.scss";
+
+li {
+  list-style: none;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin: 0.25rem auto;
+    border-radius: 1px;
+    background-color: $color-primary;
+    transition: 150ms all;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+
+  a {
+    color: $color-primary;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+}

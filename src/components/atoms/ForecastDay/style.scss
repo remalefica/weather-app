@@ -1,0 +1,20 @@
+.forecast__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.forecast__icon {
+  width: 72px;
+}
+
+.forecast__temp {
+  font-size: 0.875rem;
+  display: flex;
+  gap: 4px;
+}
+
+.forecast__accent {
+  font-weight: 600;
+}

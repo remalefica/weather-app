@@ -1,0 +1,26 @@
+@import "../../../scss/mixins.scss";
+@import "../../../scss/variables.scss";
+
+.btn {
+  font-size: 0.875em;
+  text-transform: capitalize;
+  padding: 0 1.25em;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--outline {
+    @include bordered($color-primary);
+
+    color: $color-primary;
+    background-color: $color-white;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-primary;
+    }
+  }
+}

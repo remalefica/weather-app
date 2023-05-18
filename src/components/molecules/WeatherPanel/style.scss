@@ -1,0 +1,37 @@
+@import "../../../scss/mixins.scss";
+@import "../../../scss/variables.scss";
+
+.weather {
+  $self: &;
+
+  .weather__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+    #{$self}__icon {
+      width: 160px;
+      margin: -10px;
+    }
+
+    #{$self}__descr {
+      margin-bottom: 1rem;
+    }
+
+    #{$self}__main > div {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+
+    #{$self}__additional > p {
+      display: flex;
+      gap: 2px;
+
+      .weather__accent {
+        font-weight: 600;
+        margin-left: 4px;
+      }
+    }
+  }
+}
